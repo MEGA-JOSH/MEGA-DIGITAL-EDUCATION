@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Web Development Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fcfbfb;
+            line-height: 1.6;
+            background-image: url('data:image/jpeg;base64,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'); /* Replace with your image filename or URL */
+            background-size: cover; /* Makes the image cover the entire background */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        h2, h3 {
+            color: #faf9f9;
+            margin-top: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .project {
+            background: #04adfc;
+            padding: 10px;
+            border-left: 5px solid #0056b3;
+            margin: 20px 0;
+        }
+
+        .time {
+            font-weight: bold;
+        }
+
+        .start-button {
+            display: inline-flex;
+            padding: 10px 15px;
+            background-color: #55a3f7;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .start-button:hover {
+            background-color: #004099;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Web Development Course</h1>
+
+        <!-- Introduction to Web Development -->
+        <div class="section">
+            <h2>1. Introduction to Web Development</h2>
+            <p><span class="time">Duration:</span> 1 hour</p>
+            <p>Objective: Understand the basics of web development and its different components.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>What is web development?</li>
+                <li>Frontend vs. Backend vs. Full-Stack Development</li>
+                <li>Overview of core technologies: HTML, CSS, JavaScript, and databases</li>
+                <li>The development process: Design, Development, Deployment</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Create a simple "Hello World" webpage using HTML.
+            </div>
+            <a href="intro_to_webdev.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- HTML Section -->
+        <div class="section">
+            <h2>2. HTML (HyperText Markup Language)</h2>
+            <p><span class="time">Duration:</span> 3 hours</p>
+            <p>Objective: Learn how to structure a webpage using HTML.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Basic structure of an HTML document</li>
+                <li>Common HTML tags: headings, paragraphs, links, images, lists, and tables</li>
+                <li>Forms and input elements</li>
+                <li>Semantic HTML (article, section, footer, header, nav, etc.)</li>
+                <li>Accessibility in HTML</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a basic website structure for a portfolio or blog using HTML.
+            </div>
+            <a href="html_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- CSS Section -->
+        <div class="section">
+            <h2>3. CSS (Cascading Style Sheets)</h2>
+            <p><span class="time">Duration:</span> 4 hours</p>
+            <p>Objective: Style HTML elements using CSS to create visually appealing websites.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Basic CSS syntax and selectors</li>
+                <li>Box model (padding, margin, border)</li>
+                <li>Positioning elements (static, relative, absolute, fixed, and sticky)</li>
+                <li>Flexbox and CSS Grid for responsive layouts</li>
+                <li>CSS animations and transitions</li>
+                <li>Responsive design with media queries</li>
+                <li>Using CSS frameworks (Bootstrap, Tailwind)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a responsive website using Flexbox and Grid.
+            </div>
+            <a href="css_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- JavaScript (Basic) Section -->
+        <div class="section">
+            <h2>4. JavaScript (Basic)</h2>
+            <p><span class="time">Duration:</span> 6 hours</p>
+            <p>Objective: Learn how to make websites dynamic using JavaScript.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>JavaScript basics: Variables, data types, operators</li>
+                <li>Functions, loops, and conditionals</li>
+                <li>DOM Manipulation (interacting with HTML elements via JavaScript)</li>
+                <li>Event handling (clicks, mouse movements, form submissions)</li>
+                <li>Working with arrays and objects</li>
+                <li>Introduction to ES6 features (let, const, arrow functions, template literals)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Create an interactive to-do list or calculator using JavaScript.
+            </div>
+            <a href="javascript_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Advanced JavaScript Section -->
+        <div class="section">
+            <h2>5. Advanced JavaScript (ES6+ & Modern Concepts)</h2>
+            <p><span class="time">Duration:</span> 6 hours</p>
+            <p>Objective: Explore advanced JavaScript features and modern web development techniques.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Asynchronous programming (callbacks, promises, and async/await)</li>
+                <li>Fetch API and making HTTP requests</li>
+                <li>JavaScript modules (import/export)</li>
+                <li>Object-oriented programming in JavaScript (classes and prototypes)</li>
+                <li>Working with JSON data</li>
+                <li>Introduction to modern JavaScript frameworks (React, Vue, or Angular overview)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a weather app that fetches data from an API.
+            </div>
+            <a href="advanced_js_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Version Control with Git Section -->
+        <div class="section">
+            <h2>6. Version Control with Git</h2>
+            <p><span class="time">Duration:</span> 2 hours</p>
+            <p>Objective: Learn version control and collaboration using Git and GitHub.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>What is Git and why it's important</li>
+                <li>Basic Git commands (init, add, commit, push, pull, clone)</li>
+                <li>Branching and merging</li>
+                <li>Collaborating on GitHub (pull requests, forks, issues)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Create a repository on GitHub and collaborate with peers on a small project.
+            </div>
+            <a href="git_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Responsive Web Design & Mobile-First Development Section -->
+        <div class="section">
+            <h2>7. Responsive Web Design & Mobile-First Development</h2>
+            <p><span class="time">Duration:</span> 4 hours</p>
+            <p>Objective: Ensure websites look great on all devices.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Introduction to responsive web design</li>
+                <li>Mobile-first approach</li>
+                <li>Media queries and breakpoints</li>
+                <li>Using CSS Grid and Flexbox for responsive layouts</li>
+                <li>Testing responsiveness with browser developer tools</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Convert an existing static website to a fully responsive site.
+            </div>
+            <a href="responsive_design_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Introduction to Frontend Frameworks Section -->
+        <div class="section">
+            <h2>8. Introduction to Frontend Frameworks (Bootstrap, Tailwind)</h2>
+            <p><span class="time">Duration:</span> 3 hours</p>
+            <p>Objective: Learn how to use frontend frameworks to speed up development.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>What are CSS frameworks and why use them?</li>
+                <li>Introduction to Bootstrap: Grid system, components, and utilities</li>
+                <li>Tailwind CSS: Utility-first framework</li>
+                <li>Using frameworks to create responsive websites quickly</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Redesign a static site using Bootstrap or Tailwind.
+            </div>
+            <a href="frontend_frameworks_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Backend Development Section -->
+        <div class="section">
+            <h2>9. Backend Development (Introduction to Server-Side Programming)</h2>
+            <p><span class="time">Duration:</span> 6 hours</p>
+            <p>Objective: Understand server-side development using Node.js or PHP.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Introduction to servers and backend programming</li>
+                <li>Setting up a local server with Node.js or PHP</li>
+                <li>Routing and HTTP methods (GET, POST)</li>
+                <li>Introduction to databases (MySQL or MongoDB)</li>
+                <li>Storing and retrieving data from a database</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Create a simple blog with user registration and login functionality.
+            </div>
+            <a href="backend_dev_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Databases & SQL Section -->
+        <div class="section">
+            <h2>10. Databases & SQL</h2>
+            <p><span class="time">Duration:</span> 4 hours</p>
+            <p>Objective: Learn how to work with databases to store and retrieve data.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Introduction to databases (SQL vs. NoSQL)</li>
+                <li>MySQL: Creating databases and tables</li>
+                <li>SQL Queries: SELECT, INSERT, UPDATE, DELETE</li>
+                <li>Relationships (one-to-many, many-to-many)</li>
+                <li>Introduction to NoSQL (e.g., MongoDB) for flexibility</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a basic user registration system using MySQL.
+            </div>
+            <a href="sql_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Full-Stack Development Section -->
+        <div class="section">
+            <h2>11. Full-Stack Development with Node.js or PHP</h2>
+            <p><span class="time">Duration:</span> 8 hours</p>
+            <p>Objective: Build full-stack web applications that use both frontend and backend.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Connecting the frontend and backend (API development)</li>
+                <li>Authentication and session management (login, signup)</li>
+                <li>REST APIs (building and consuming)</li>
+                <li>CRUD operations (Create, Read, Update, Delete)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a complete CRUD-based blog application with authentication.
+            </div>
+            <a href="fullstack_dev_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Introduction to Modern Frontend Frameworks Section -->
+        <div class="section">
+            <h2>12. Introduction to Modern Frontend Frameworks (React.js)</h2>
+            <p><span class="time">Duration:</span> 8 hours</p>
+            <p>Objective: Learn how to use React.js to create dynamic, component-based UIs.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Why use React? Introduction to single-page applications (SPAs)</li>
+                <li>Components, props, and state</li>
+                <li>React hooks (useState, useEffect)</li>
+                <li>Working with forms in React</li>
+                <li>Introduction to React Router (client-side routing)</li>
+            </ul>
+            <div class="project">
+                <strong>Project:</strong> Build a dynamic to-do list or eCommerce product page with React.js.
+            </div>
+            <a href="react_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <!-- Advanced Topics Section -->
+        <div class="section">
+            <h2>13. Advanced Topics (Optional)</h2>
+            <p><span class="time">Duration:</span> Varies</p>
+            <p>Objective: Explore advanced topics in web development.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Web Performance Optimization</li>
+                <li>Progressive Web Apps (PWAs)</li>
+                <li>Introduction to TypeScript</li>
+                <li>Testing and Debugging</li>
+                <li>Deployment on the Cloud (AWS, Netlify, Heroku)</li>
+            </ul>
+            <div class="project">
+                <strong>Capstone Project (Final Assessment):</strong> Build a full-fledged web application from scratch.
+            </div>
+            <a href="advanced_topics_course.html" class="start-button">START COURSE</a>
+        </div>
+
+        <h2>Tools & Resources</h2>
+        <ul>
+            <li>Text Editors: VSCode, Sublime Text</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>Frontend Frameworks: Bootstrap, Tailwind, React.js</li>
+            <li>Backend: Node.js, Express.js, PHP, or Django (Python)</li>
+        </ul>
+
+        <a href="course1.html" class="back-button">Back to all Courses</a>
+    </div>
+</body>
+</html>

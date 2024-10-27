@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data and Data Engineering</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Big Data and Data Engineering</h1>
+        <p class="duration">Duration: 4 hours</p>
+    </header>
+    <div class="content">
+        <h2>Objective</h2>
+        <p>Learn about data engineering and big data tools.</p>
+
+        <h2>Topics</h2>
+        <ul>
+            <li>Introduction to big data</li>
+            <li>Data storage solutions: SQL, NoSQL</li>
+            <li>Overview of big data tools (Hadoop, Spark)</li>
+            <li>Data pipelines and ETL (Extract, Transform, Load)</li>
+        </ul>
+
+        <h2>Explanation</h2>
+        <p>Big data refers to datasets that are too large or complex for traditional data-processing software to manage. The field of data engineering focuses on the design and construction of systems for collecting, storing, and analyzing big data. Understanding the tools and methodologies used in this space is essential for data scientists.</p>
+
+        <h3>Introduction to Big Data</h3>
+        <p>Big data is characterized by the "three Vs": Volume, Velocity, and Variety:</p>
+        <ul>
+            <li><strong>Volume:</strong> Refers to the large amounts of data generated every second from various sources.</li>
+            <li><strong>Velocity:</strong> The speed at which data is generated and processed. Real-time data processing is often required.</li>
+            <li><strong>Variety:</strong> The different types of data (structured, semi-structured, unstructured) generated from diverse sources.</li>
+        </ul>
+
+        <h3>Data Storage Solutions</h3>
+        <p>When dealing with big data, selecting the right storage solution is crucial. There are two primary categories:</p>
+        <ul>
+            <li><strong>SQL Databases:</strong> Traditional relational databases (like MySQL and PostgreSQL) that use structured query language (SQL) for data management. They are well-suited for structured data and complex queries.</li>
+            <li><strong>NoSQL Databases:</strong> These databases (like MongoDB and Cassandra) are designed to handle unstructured data and provide flexibility in schema design. They are useful for large-scale data applications that require high throughput and low latency.</li>
+        </ul>
+
+        <h3>Big Data Tools</h3>
+        <p>Several tools are available for managing and analyzing big data:</p>
+        <ul>
+            <li><strong>Hadoop:</strong> An open-source framework that allows for distributed storage and processing of large datasets across clusters of computers. Its core components include Hadoop Distributed File System (HDFS) for storage and MapReduce for processing.</li>
+            <li><strong>Apache Spark:</strong> A unified analytics engine for big data processing that provides fast, in-memory data processing capabilities. It supports various programming languages (like Python, Java, and Scala) and is ideal for iterative algorithms and real-time processing.</li>
+        </ul>
+
+        <h3>Data Pipelines and ETL</h3>
+        <p>A data pipeline is a series of data processing steps. An ETL (Extract, Transform, Load) pipeline is a common approach in data engineering:</p>
+        <ul>
+            <li><strong>Extract:</strong> Data is extracted from various sources (databases, APIs, etc.).</li>
+            <li><strong>Transform:</strong> Data is cleaned, enriched, and transformed into a suitable format for analysis.</li>
+            <li><strong>Load:</strong> The processed data is loaded into a destination system (like a data warehouse) for analysis.</li>
+        </ul>
+
+        <h2>Project</h2>
+        <p>Design a basic data pipeline using a big data tool like Apache Spark.</p>
+
+        <h2>Quiz</h2>
+        <p>1. What are the three Vs of big data?</p>
+        <p>2. Describe the differences between SQL and NoSQL databases.</p>
+        <p>3. What is the purpose of an ETL pipeline?</p>
+    </div>
+</body>
+</html>

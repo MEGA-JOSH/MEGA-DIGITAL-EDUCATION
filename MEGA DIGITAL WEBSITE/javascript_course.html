@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript (Basic)</h1>
+        <p>Duration: 6 hours</p>
+        <h2>Objective</h2>
+        <p>Learn how to make websites dynamic using JavaScript.</p>
+
+        <h2>Topics Covered</h2>
+        <ul>
+            <li><strong>JavaScript Basics</strong>
+                <p>JavaScript is a programming language that allows you to create dynamic content on web pages. Key concepts include:</p>
+                <ul>
+                    <li><strong>Variables:</strong> Store data values.</li>
+                    <li><strong>Data Types:</strong> Includes strings, numbers, booleans, etc.</li>
+                    <li><strong>Operators:</strong> Perform operations on variables and values.</li>
+                </ul>
+                <pre><code>
+let name = "John Doe";
+let age = 30;
+                </code></pre>
+            </li>
+            <li><strong>Functions, Loops, and Conditionals</strong>
+                <p>Functions are reusable blocks of code. Loops and conditionals allow you to execute code based on conditions.</p>
+                <pre><code>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+                </code></pre>
+            </li>
+            <li><strong>DOM Manipulation</strong>
+                <p>The Document Object Model (DOM) represents the structure of your web page. You can use JavaScript to manipulate HTML elements.</p>
+                <pre><code>
+document.getElementById("myElement").innerText = "New Content!";
+                </code></pre>
+            </li>
+            <li><strong>Event Handling</strong>
+                <p>JavaScript allows you to respond to user actions like clicks and form submissions.</p>
+                <pre><code>
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button Clicked!");
+});
+                </code></pre>
+            </li>
+            <li><strong>Working with Arrays and Objects</strong>
+                <p>Arrays and objects are essential for storing collections of data.</p>
+                <pre><code>
+let fruits = ["Apple", "Banana", "Cherry"];
+let car = { brand: "Toyota", model: "Corolla" };
+                </code></pre>
+            </li>
+            <li><strong>Introduction to ES6 Features</strong>
+                <p>ES6 introduced new syntax and features to JavaScript, including:</p>
+                <ul>
+                    <li><strong>let and const:</strong> Block-scoped variables.</li>
+                    <li><strong>Arrow Functions:</strong> Shorter function syntax.</li>
+                    <li><strong>Template Literals:</strong> String interpolation.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Project</h2>
+        <p>Create an interactive to-do list or calculator using JavaScript.</p>
+
+        <h2>Summary</h2>
+        <p>This section introduced the fundamentals of JavaScript, including variables, functions, DOM manipulation, and event handling.</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Build a simple JavaScript-based calculator.</li>
+            <li>Create a to-do list app that allows adding and removing items.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>

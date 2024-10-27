@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Course Outline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('data:image/jpeg;base64,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'); /* Replace with your image filename or URL */
+            background-size: cover; /* Makes the image cover the entire background */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        h3 {
+            color: #333;
+        }
+        .project {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .duration {
+            font-weight: bold;
+            color: #555;
+        }
+        ul {
+            margin-top: 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+        .start-btn {
+            display: inline-flex;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .start-button:hover {
+            background-color:  #4CAF50;
+        }
+           
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Science Course Outline</h1>
+    </header>
+    <div class="content">
+        <!-- Section 1 -->
+        <div class="section">
+            <h2>1. Introduction to Data Science</h2>
+            <p class="duration">Duration: 1 hour</p>
+            <p><strong>Objective:</strong> Understand what data science is, its applications, and why it's important.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Definition of data science</li>
+                <li>Real-world applications (business, healthcare, finance)</li>
+                <li>Key skills in data science (programming, statistics, machine learning, data visualization)</li>
+                <li>Overview of data science lifecycle: data collection, processing, analysis, and decision-making</li>
+                <li>Tools and environments used in data science (Python, R, Jupyter Notebooks)</li>
+            </ul>
+            <p class="project">Project: Analyze a dataset using basic statistical methods.</p>
+            <a href="intro-to-data-science.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h2>2. Python for Data Science</h2>
+            <p class="duration">Duration: 3 hours</p>
+            <p><strong>Objective:</strong> Learn the basics of Python programming for data manipulation and analysis.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Python basics: data types, variables, and operators</li>
+                <li>Control structures: loops and conditionals</li>
+                <li>Functions and modules</li>
+                <li>Data structures: lists, dictionaries, tuples</li>
+                <li>Introduction to popular data science libraries: NumPy, pandas, matplotlib</li>
+            </ul>
+            <p class="project">Project: Write Python scripts to clean and analyze small datasets.</p>
+            <a href="python-for-ds.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <h2>3. Data Collection and Cleaning</h2>
+            <p class="duration">Duration: 4 hours</p>
+            <p><strong>Objective:</strong> Acquire and clean raw data for analysis.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Sources of data: APIs, web scraping, databases</li>
+                <li>Data quality assessment</li>
+                <li>Handling missing data, duplicates, and errors</li>
+                <li>Data cleaning techniques with pandas</li>
+                <li>Exploratory data analysis (EDA)</li>
+            </ul>
+            <p class="project">Project: Clean and prepare a dataset for analysis, handling missing values and data inconsistencies.</p>
+            <a href="data-collection.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <h2>4. Data Visualization</h2>
+            <p class="duration">Duration: 3 hours</p>
+            <p><strong>Objective:</strong> Learn how to visualize and interpret data using Python.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Importance of data visualization</li>
+                <li>Visualization libraries: matplotlib, seaborn, plotly</li>
+                <li>Types of visualizations (histograms, scatter plots, line graphs, box plots, heatmaps)</li>
+                <li>Choosing the right visualization for the data</li>
+                <li>Storytelling with data</li>
+            </ul>
+            <p class="project">Project: Visualize a dataset to identify trends and insights.</p>
+            <a href="data-visualization.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section">
+            <h2>5. Statistics and Probability for Data Science</h2>
+            <p class="duration">Duration: 5 hours</p>
+            <p><strong>Objective:</strong> Master essential statistics and probability concepts for data analysis.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Descriptive statistics: mean, median, mode, standard deviation, variance</li>
+                <li>Probability fundamentals: distributions, events, conditional probability</li>
+                <li>Inferential statistics: hypothesis testing, confidence intervals, p-values</li>
+                <li>Correlation and causation</li>
+                <li>Overview of statistical tests (t-test, chi-square test, ANOVA)</li>
+            </ul>
+            <p class="project">Project: Perform statistical analysis on a dataset and draw conclusions.</p>
+            <a href="statistics-for-ds.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section">
+            <h2>6. Introduction to Machine Learning</h2>
+            <p class="duration">Duration: 6 hours</p>
+            <p><strong>Objective:</strong> Understand the basics of machine learning and its types.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Overview of machine learning (ML) and its applications</li>
+                <li>Types of ML: supervised, unsupervised, and reinforcement learning</li>
+                <li>Key ML algorithms: linear regression, k-nearest neighbors, k-means clustering</li>
+                <li>Model evaluation: accuracy, precision, recall, F1 score</li>
+            </ul>
+            <p class="project">Project: Build and evaluate a basic predictive model using scikit-learn.</p>
+            <a href="intro-to-machine-learning.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section">
+            <h2>7. Supervised Learning</h2>
+            <p class="duration">Duration: 6 hours</p>
+            <p><strong>Objective:</strong> Learn key supervised learning algorithms and applications.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Linear regression and logistic regression</li>
+                <li>Decision trees and random forests</li>
+                <li>Support vector machines (SVM)</li>
+                <li>Overfitting and underfitting</li>
+                <li>Cross-validation and hyperparameter tuning</li>
+            </ul>
+            <p class="project">Project: Develop a supervised learning model to predict a target variable.</p>
+            <a href="supervised-learning.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="section">
+            <h2>8. Unsupervised Learning</h2>
+            <p class="duration">Duration: 5 hours</p>
+            <p><strong>Objective:</strong> Explore unsupervised learning algorithms for clustering and dimensionality reduction.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Clustering techniques: k-means, hierarchical clustering</li>
+                <li>Principal Component Analysis (PCA)</li>
+                <li>Anomaly detection</li>
+            </ul>
+            <p class="project">Project: Use clustering techniques to group data and identify patterns.</p>
+            <a href="unsupervised-learning.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="section">
+            <h2>9. Feature Engineering and Data Preprocessing</h2>
+            <p class="duration">Duration: 4 hours</p>
+            <p><strong>Objective:</strong> Learn techniques for preparing data for machine learning.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Handling categorical and numerical variables</li>
+                <li>Feature scaling and normalization</li>
+                <li>Encoding categorical data</li>
+                <li>Feature selection and extraction</li>
+            </ul>
+            <p class="project">Project: Perform data preprocessing and feature engineering for a machine learning model.</p>
+            <a href="feature-engineering.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section">
+            <h2>10. Model Evaluation and Tuning</h2>
+            <p class="duration">Duration: 3 hours</p>
+            <p><strong>Objective:</strong> Understand how to evaluate and optimize machine learning models.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Metrics for classification and regression</li>
+                <li>Confusion matrix, ROC-AUC curve</li>
+                <li>Model tuning: grid search, random search</li>
+                <li>Model interpretability</li>
+            </ul>
+            <p class="project">Project: Evaluate a model using different metrics and tune hyperparameters to improve performance.</p>
+            <a href="mode-evaluation.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="section">
+            <h2>11. Introduction to Deep Learning (Optional)</h2>
+            <p class="duration">Duration: 6 hours</p>
+            <p><strong>Objective:</strong> Gain a basic understanding of deep learning concepts.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>What is deep learning, and how does it differ from ML?</li>
+                <li>Neural networks: perceptron, hidden layers, activation functions</li>
+                <li>Introduction to TensorFlow and Keras</li>
+            </ul>
+            <p class="project">Project: Train a simple neural network for image or text classification.</p>
+            <a href="intro-to-deep-learning.html" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="section">
+            <h2>12. Big Data and Data Engineering (Optional)</h2>
+            <p class="duration">Duration: 4 hours</p>
+            <p><strong>Objective:</strong> Learn about data engineering and big data tools.</p>
+            <h3>Topics:</h3>
+            <ul>
+                <li>Introduction to big data</li>
+                <li>Data storage solutions: SQL, NoSQL</li>
+                <li>Overview of big data tools (Hadoop, Spark)</li>
+                <li>Data pipelines and ETL (Extract, Transform, Load)</li>
+            </ul>
+            <p class="project">Project: Design a basic data pipeline.</p>
+            <a href="big-data.txt" class="start-btn">START COURSE</a>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="section">
+            <h2>13. Capstone Project</h2>
+            <p class="duration">Duration: 8 hours</p>
+            <p><strong>Objective:</strong> Apply data science concepts to a real-world project.</p>
+            <h3>Project Ideas:</h3>
+            <ul>
+                <li>Customer Segmentation: Use clustering techniques to segment customers.</li>
+                <li>Predictive Analytics: Develop a predictive model for sales, stock prices, or customer churn.</li>
+                <li>Data Storytelling: Create a report and visualization for a public dataset (e.g., healthcare, finance, climate).</li>
+                <li>Text Analysis: Perform sentiment analysis on customer reviews or social media data.</li>
+                <a href="capstone-project.html" class="start-btn">START COURSE</a>
+            </ul>
+            <p><strong>Project Requirements:</strong></p>
+            <ul>
+                <li>Apply data cleaning, visualization, and feature engineering</li>
+                <li>Build and evaluate machine learning models</li>
+                <li>Present findings and actionable insights</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

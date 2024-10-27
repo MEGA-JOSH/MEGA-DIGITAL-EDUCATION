@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervised Learning</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Supervised Learning</h1>
+        <p class="duration">Duration: 6 hours</p>
+    </header>
+    <div class="content">
+        <h2>Objective</h2>
+        <p>Learn key supervised learning algorithms and applications.</p>
+
+        <h2>Topics</h2>
+        <ul>
+            <li>Linear regression and logistic regression</li>
+            <li>Decision trees and random forests</li>
+            <li>Support vector machines (SVM)</li>
+            <li>Overfitting and underfitting</li>
+            <li>Cross-validation and hyperparameter tuning</li>
+        </ul>
+
+        <h2>Explanation</h2>
+        <p>Supervised learning involves training a model on labeled data, where the input data is associated with the correct output. The goal is to learn a mapping from inputs to outputs that can be used to make predictions on new, unseen data.</p>
+
+        <h3>Linear Regression</h3>
+        <p>Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The model assumes a linear relationship, expressed by the equation:</p>
+        <pre><code>y = β0 + β1*x1 + β2*x2 + ... + βn*xn + ε</code></pre>
+        <p>Where β are coefficients, x are the independent variables, and ε is the error term.</p>
+
+        <h3>Logistic Regression</h3>
+        <p>Logistic regression is used for binary classification problems. It models the probability that a given input belongs to a particular category. The output is transformed using the logistic function:</p>
+        <pre><code>p = 1 / (1 + e^(-z))</code></pre>
+        <p>Where z is a linear combination of the input features.</p>
+
+        <h3>Decision Trees</h3>
+        <p>Decision trees are a non-parametric supervised learning method used for classification and regression. They work by recursively splitting the data into subsets based on the feature that results in the most significant information gain.</p>
+
+        <h3>Random Forests</h3>
+        <p>Random forests are an ensemble learning method that combines multiple decision trees to improve predictive accuracy and control overfitting. Each tree in the forest is trained on a random subset of the data.</p>
+
+        <h3>Support Vector Machines (SVM)</h3>
+        <p>SVM is a powerful classification technique that finds the optimal hyperplane to separate different classes in the feature space. It aims to maximize the margin between classes.</p>
+
+        <h3>Overfitting and Underfitting</h3>
+        <p>Overfitting occurs when a model learns the noise in the training data, while underfitting happens when a model is too simple to capture the underlying patterns. Balancing model complexity is crucial for good performance.</p>
+
+        <h3>Cross-Validation</h3>
+        <p>Cross-validation is a technique for assessing how the results of a statistical analysis will generalize to an independent dataset. It is essential for verifying the performance of a model.</p>
+
+        <h3>Hyperparameter Tuning</h3>
+        <p>Hyperparameter tuning involves adjusting the parameters that govern the learning process to improve model performance. Techniques such as grid search and random search can be used for this purpose.</p>
+
+        <h2>Project</h2>
+        <p>Develop a supervised learning model to predict a target variable.</p>
+
+        <h2>Quiz</h2>
+        <p>1. What is the primary difference between linear and logistic regression?</p>
+        <p>2. Explain the concept of overfitting.</p>
+        <p>3. What is the purpose of cross-validation?</p>
+    </div>
+</body>
+</html>

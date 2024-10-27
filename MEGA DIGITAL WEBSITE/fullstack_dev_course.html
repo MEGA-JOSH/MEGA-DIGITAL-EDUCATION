@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Development with Node.js or PHP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Full-Stack Development with Node.js or PHP</h1>
+        <p>Duration: 8 hours</p>
+
+        <h2>Objective</h2>
+        <p>Build full-stack web applications that connect frontend with backend, using either Node.js or PHP.</p>
+
+        <h2>Topics Covered</h2>
+
+        <h3>1. Connecting Frontend and Backend (API Development)</h3>
+        <p>A full-stack developer combines the client-side (frontend) with the server-side (backend). You can connect them using REST APIs, where the backend serves data to the frontend through endpoints.</p>
+
+        <pre><code>
+// Example Node.js API with Express
+const express = require('express');
+const app = express();
+app.get('/api/products', (req, res) => {
+    res.json([{ name: 'Product 1', price: 100 }, { name: 'Product 2', price: 200 }]);
+});
+app.listen(3000, () => console.log('Server is running on port 3000'));
+        </code></pre>
+
+        <h3>2. Authentication and Session Management</h3>
+        <p>Authentication involves verifying users' identities, typically through login and signup forms. Session management ensures that users stay logged in as they browse through different pages. You can store session data in cookies or server-side sessions.</p>
+
+        <pre><code>
+// Example: Express session management in Node.js
+const session = require('express-session');
+app.use(session({
+    secret: 'mySecret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
+        </code></pre>
+
+        <h3>3. CRUD Operations (Create, Read, Update, Delete)</h3>
+        <p>CRUD operations allow users to create, read, update, and delete data. These are essential for web apps like blogs, eCommerce sites, or forums where users manage content.</p>
+
+        <pre><code>
+// Example: CRUD in PHP (Insert data into MySQL)
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "my_database";
+$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = "INSERT INTO posts (title, content) VALUES ('My First Post', 'This is my first blog post!')";
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+        </code></pre>
+
+        <h3>4. REST APIs (Building and Consuming)</h3>
+        <p>REST (Representational State Transfer) APIs are used to interact between frontend and backend. The backend exposes certain endpoints that the frontend can "consume" using HTTP requests like GET, POST, PUT, DELETE.</p>
+
+        <h2>Project</h2>
+        <p>Build a full CRUD-based blog application where users can sign up, log in, create blog posts, edit, and delete them. Use Node.js or PHP for the backend and a database (MySQL or MongoDB) to store data.</p>
+
+        <h2>Summary</h2>
+        <p>In this section, you learned how to build a full-stack application that connects the frontend with the backend through APIs, handles user authentication, and performs CRUD operations.</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Create an API that serves JSON data to a frontend application using Node.js or PHP.</li>
+            <li>Implement login and signup functionality using session management.</li>
+            <li>Create a simple to-do list that performs CRUD operations with a database.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>
