@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+    background-color: #f0f8ff; /* Light blue background */
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Course Section Styling */
+#courses {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for spacing */
+    padding: 50px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Individual Course Cards */
+.course {
+    display: inline-block;
+    background-color: white;
+    width: 450px;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced card shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.course h3 {
+    color: #007bff; /* Blue for course titles */
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700; /* Bold font */
+}
+
+.course p {
+    padding: 0 15px 20px;
+    color: #34495e; /* Darker gray for text */
+    font-size: 1em;
+    text-align: center;
+}
+
+.course:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Enroll Button */
+.enroll-btn {
+    display: block;
+    text-align: center;
+    background-color: #007bff; /* Primary blue for buttons */
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom-left-radius: 15px; /* Rounded bottom corners */
+    border-bottom-right-radius: 15px;
+    transition: background 0.3s;
+    text-decoration: none; /* No underline */
+    margin: 0;
+}
+
+.enroll-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Page Heading */
+h2 {
+    font-size: 2.5em;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600; /* Bold font */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .course {
+        width: 90%; /* Full width for mobile screens */
+    }
+}
