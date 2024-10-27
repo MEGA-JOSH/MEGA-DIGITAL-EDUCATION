@@ -1,0 +1,113 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main container for the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #007acc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subheading Styling */
+h2 {
+    font-size: 1.8rem;
+    color: #005f99;
+    margin-top: 20px;
+}
+
+/* Paragraphs Styling */
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Unordered List Styling */
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Code block styling */
+code {
+    background-color: #e8f4fd;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #eef7ff;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #007acc;
+}
+
+/* Project section styling */
+h2 + p {
+    background-color: #d0ebff;
+    padding: 10px;
+    border-left: 4px solid #005f99;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+a.back-button {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #005f99;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 0 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

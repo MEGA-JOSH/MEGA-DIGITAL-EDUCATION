@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection and Cleaning</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Data Collection and Cleaning</h1>
+        <p class="duration">Duration: 4 hours</p>
+    </header>
+    <div class="content">
+        <h2>Objective</h2>
+        <p>Acquire and clean raw data for analysis.</p>
+
+        <h2>Topics</h2>
+        <ul>
+            <li>Sources of data: APIs, web scraping, databases</li>
+            <li>Data quality assessment</li>
+            <li>Handling missing data, duplicates, and errors</li>
+            <li>Data cleaning techniques with pandas</li>
+            <li>Exploratory data analysis (EDA)</li>
+        </ul>
+
+        <h2>Explanation</h2>
+        <p>Data collection is the first step in the data science lifecycle. It involves gathering information from various sources, such as APIs, web scraping, and databases.</p>
+        
+        <h3>Sources of Data</h3>
+        <p>APIs provide a structured way to retrieve data from web services. For instance, you can use the Twitter API to collect tweets. Web scraping is another method, where you extract data from websites using libraries like BeautifulSoup in Python.</p>
+
+        <h3>Data Quality Assessment</h3>
+        <p>Assessing data quality is crucial. You should evaluate data for accuracy, completeness, and consistency. Poor quality data can lead to misleading insights.</p>
+
+        <h3>Handling Missing Data</h3>
+        <p>Handling missing values is vital in data cleaning. Techniques include removing rows with missing data or filling them in with statistical measures like the mean or median.</p>
+
+        <h3>Data Cleaning Techniques</h3>
+        <p>Using pandas, you can clean data effectively. For example, you can use `dropna()` to remove missing values:</p>
+        <pre><code>import pandas as pd
+data = pd.read_csv('data.csv')
+cleaned_data = data.dropna()</code></pre>
+
+        <h3>Exploratory Data Analysis (EDA)</h3>
+        <p>EDA helps in understanding data characteristics. You can visualize data distributions and relationships using histograms, scatter plots, and box plots.</p>
+
+        <h2>Project</h2>
+        <p>Clean and prepare a dataset for analysis, handling missing values and data inconsistencies.</p>
+
+        <h2>Quiz</h2>
+        <p>1. What is web scraping?</p>
+        <p>2. How can you handle missing data in a dataset?</p>
+        <p>3. Why is data quality assessment important?</p>
+    </div>
+</body>
+</html>

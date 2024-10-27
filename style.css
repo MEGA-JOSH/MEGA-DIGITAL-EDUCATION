@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Header Styles */
+header {
+    background: #4CAF50; /* Dark grey */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Content Styles */
+.content {
+    max-width: 800px; /* Limit content width */
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    color: #4CAF50; /* Dark grey */
+    border-bottom: 2px solid #35424a; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #4CAF50; /* Slightly lighter grey */
+}
+
+ul, ol {
+    margin: 15px 0; /* Spacing for lists */
+    padding-left: 20px; /* Indentation */
+}
+
+li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+blockquote {
+    background: #f9f9f9; /* Light grey background for quotes */
+    border-left: 5px solid #35424a; /* Left border */
+    padding: 10px 15px; /* Padding inside quote */
+    margin: 10px 0; /* Margin for quote */
+}
+
+/* Quiz Styles */
+.quiz {
+    background: #e8f5e9; /* Light green background for quiz section */
+    border: 1px solid #4caf50; /* Darker green border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for quiz section */
+}
+
+.quiz p {
+    margin: 5px 0; /* Margin for quiz questions */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .content {
+        padding: 15px; /* Adjust padding for small screens */
+    }
+
+    header {
+        padding: 15px 0; /* Adjust header padding */
+    }
+}

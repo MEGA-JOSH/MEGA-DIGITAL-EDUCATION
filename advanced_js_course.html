@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced JavaScript (ES6+ & Modern Concepts)</h1>
+        <p>Duration: 6 hours</p>
+        <h2>Objective</h2>
+        <p>Explore advanced JavaScript features and modern web development techniques.</p>
+
+        <h2>Topics Covered</h2>
+        <ul>
+            <li><strong>Asynchronous Programming</strong>
+                <p>JavaScript is single-threaded, but asynchronous programming allows handling multiple operations simultaneously. Key concepts include:</p>
+                <ul>
+                    <li><strong>Callbacks:</strong> Functions passed as arguments to other functions.</li>
+                    <li><strong>Promises:</strong> Objects representing the eventual completion (or failure) of an asynchronous operation.</li>
+                    <li><strong>Async/Await:</strong> Syntactic sugar for handling promises more easily.</li>
+                </ul>
+                <pre><code>
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        // Simulate a network request
+        setTimeout(() => resolve("Data received"), 2000);
+    });
+};
+
+fetchData().then(data => console.log(data));
+                </code></pre>
+            </li>
+            <li><strong>Fetch API</strong>
+                <p>The Fetch API allows making network requests similar to XMLHttpRequest. It returns promises.</p>
+                <pre><code>
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+                </code></pre>
+            </li>
+            <li><strong>JavaScript Modules</strong>
+                <p>Modules help in organizing code and reusing components across different files. Use <code>import</code> and <code>export</code> syntax.</p>
+                <pre><code>
+// module.js
+export const greeting = "Hello";
+
+// main.js
+import { greeting } from './module.js';
+console.log(greeting);
+                </code></pre>
+            </li>
+            <li><strong>Object-Oriented Programming</strong>
+                <p>JavaScript supports OOP concepts. Understand classes, constructors, and inheritance.</p>
+                <pre><code>
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+class Dog extends Animal {
+    bark() {
+        console.log(`${this.name} says woof!`);
+    }
+}
+
+const dog = new Dog('Buddy');
+dog.bark();
+                </code></pre>
+            </li>
+            <li><strong>Working with JSON Data</strong>
+                <p>JSON (JavaScript Object Notation) is a lightweight data interchange format. Use <code>JSON.stringify()</code> and <code>JSON.parse()</code> to handle JSON data.</p>
+            </li>
+            <li><strong>Introduction to Modern JavaScript Frameworks</strong>
+                <p>Overview of popular frameworks like React, Vue, and Angular, focusing on component-based architecture and state management.</p>
+            </li>
+        </ul>
+
+        <h2>Project</h2>
+        <p>Build a weather app that fetches data from an API and displays it dynamically.</p>
+
+        <h2>Summary</h2>
+        <p>This section covered advanced JavaScript features, including asynchronous programming, the Fetch API, and modern frameworks.</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Implement a promise-based function to fetch user data from an API.</li>
+            <li>Create a simple app using a JavaScript framework of your choice.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>

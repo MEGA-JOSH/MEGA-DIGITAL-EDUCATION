@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Modern Frontend Frameworks (React.js)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to Modern Frontend Frameworks (React.js)</h1>
+        <p>Duration: 8 hours</p>
+
+        <h2>Objective</h2>
+        <p>Learn how to use React.js to build modern, dynamic, and component-based UIs.</p>
+
+        <h2>Topics Covered</h2>
+
+        <h3>1. Why Use React? Introduction to Single-Page Applications (SPAs)</h3>
+        <p>React is a JavaScript library for building user interfaces. It allows developers to create single-page applications (SPAs) where the page dynamically updates without reloading. SPAs provide a faster and more seamless user experience.</p>
+
+        <h3>2. Components, Props, and State</h3>
+        <p>React applications are built using components. Each component is a reusable piece of code. Props are inputs passed to components, while state is the component's internal data that determines how it behaves and renders.</p>
+
+        <pre><code>
+// Example: A simple React component
+function Welcome(props) {
+    return <h1>Hello, {props.name}!</h1>;
+}
+
+function App() {
+    return (
+        <div>
+            <Welcome name="John" />
+            <Welcome name="Jane" />
+        </div>
+    );
+}
+        </code></pre>
+
+        <h3>3. React Hooks (useState, useEffect)</h3>
+        <p>React Hooks allow you to use state and other React features in functional components. <code>useState</code> manages the component's state, and <code>useEffect</code> handles side effects, like data fetching.</p>
+
+        <pre><code>
+// Example: Using useState and useEffect
+import React, { useState, useEffect } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0);
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    }, [count]);
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
+}
+        </code></pre>
+
+        <h3>4. Working with Forms in React</h3>
+        <p>Forms in React are handled slightly differently compared to regular HTML. You manage the form data with the component's state and update the state when the user inputs data.</p>
+
+        <pre><code>
+// Example: React form with controlled components
+function MyForm() {
+    const [name, setName] = useState('');
+
+    const handleChange = (event) => {
+        setName(event.target.value);
+    }
+
+    const handleSubmit = (event) => {
+        alert('A name was submitted: ' + name);
+        event.preventDefault();
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Name:
+                <input type="text" value={name} onChange={handleChange} />
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    );
+}
+        </code></pre>
+
+        <h3>5. Introduction to React Router (Client-Side Routing)</h3>
+        <p>React Router allows you to create routes in your React application, which lets you change the URL and render specific components based on the current route.</p>
+
+        <h2>Project</h2>
+        <p>Build a dynamic to-do list or eCommerce product page using React.js. Implement state management and client-side routing with React Router.</p>
+
+        <h2>Summary</h2>
+        <p>In this section, you learned the basics of React.js, including components, props, state, and hooks, as well as how to build dynamic user interfaces with client-side routing using React Router.</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Create a simple React app with two components: one for displaying data and another for inputting data.</li>
+            <li>Build a form in React that handles form submission and stores the data in the component's state.</li>
+            <li>Create a mini-project that implements React Router to switch between different views in your application.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases & SQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Databases & SQL</h1>
+        <p>Duration: 4 hours</p>
+
+        <h2>Objective</h2>
+        <p>Understand how to create and manage databases using SQL, and how to work with relational and NoSQL databases.</p>
+
+        <h2>Topics Covered</h2>
+
+        <h3>1. Introduction to Databases (SQL vs. NoSQL)</h3>
+        <p>A database is an organized collection of data. SQL databases, like MySQL, are structured with tables, columns, and rows. NoSQL databases, like MongoDB, store data in a more flexible format, often in JSON-like documents.</p>
+
+        <h3>2. MySQL: Creating Databases and Tables</h3>
+        <p>MySQL is a popular relational database management system (RDBMS). You can create a database and define its structure using SQL commands. Here is an example:</p>
+
+        <pre><code>
+CREATE DATABASE my_blog;
+USE my_blog;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    email VARCHAR(100),
+    password VARCHAR(255)
+);
+        </code></pre>
+
+        <h3>3. SQL Queries: SELECT, INSERT, UPDATE, DELETE</h3>
+        <p>SQL (Structured Query Language) is used to interact with the database. Common queries include:</p>
+        <ul>
+            <li><strong>SELECT:</strong> Retrieve data from a table</li>
+            <li><strong>INSERT:</strong> Add new data to a table</li>
+            <li><strong>UPDATE:</strong> Modify existing data</li>
+            <li><strong>DELETE:</strong> Remove data from a table</li>
+        </ul>
+
+        <h3>4. Relationships (One-to-Many, Many-to-Many)</h3>
+        <p>In a relational database, tables can be linked through relationships. A one-to-many relationship connects a single record in one table to multiple records in another. A many-to-many relationship involves creating a linking table between two tables.</p>
+
+        <h3>5. Introduction to NoSQL (MongoDB)</h3>
+        <p>NoSQL databases like MongoDB are schema-less, meaning they don’t require a fixed table structure. Data is stored in documents, which allows for flexibility, especially in applications where the data structure may evolve over time.</p>
+
+        <h2>Project</h2>
+        <p>Build a basic user registration system using MySQL. The system should allow users to sign up, and the data should be stored in a relational database.</p>
+
+        <h2>Summary</h2>
+        <p>This section covered the basics of databases, focusing on SQL for relational databases (MySQL) and an introduction to NoSQL databases (MongoDB).</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Set up MySQL and create a new database and table using SQL commands.</li>
+            <li>Write SQL queries to insert new data into a table, retrieve that data, and update or delete records.</li>
+            <li>Research NoSQL databases and compare them to relational databases.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>

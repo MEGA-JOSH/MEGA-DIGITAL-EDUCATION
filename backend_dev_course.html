@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Development - Introduction to Server-Side Programming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Backend Development (Introduction to Server-Side Programming)</h1>
+        <p>Duration: 6 hours</p>
+
+        <h2>Objective</h2>
+        <p>Understand the fundamentals of server-side development and how to build a simple backend using Node.js or PHP.</p>
+
+        <h2>Topics Covered</h2>
+
+        <h3>1. Introduction to Servers and Backend Programming</h3>
+        <p>The backend refers to the part of a website that users don’t see. It's responsible for server logic, database interactions, and user authentication. Common server-side languages include Node.js, PHP, Python, and Ruby.</p>
+
+        <h3>2. Setting Up a Local Server with Node.js or PHP</h3>
+        <p>To run backend code on your local machine, you need to set up a local server. For Node.js, you can use Express.js to handle routing and HTTP requests, while PHP can be run through Apache or a PHP development server.</p>
+
+        <h3>3. Routing and HTTP Methods (GET, POST)</h3>
+        <p>In server-side programming, routing refers to determining which function or piece of code runs when a user makes a request to a specific URL. The two most common HTTP methods are GET (to fetch data) and POST (to send data).</p>
+        
+        <pre><code>
+// Example: A simple Node.js route
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+app.listen(3000, () => console.log('Server is running on port 3000'));
+        </code></pre>
+
+        <h3>4. Introduction to Databases (MySQL or MongoDB)</h3>
+        <p>Databases are used to store and retrieve data. MySQL is a relational database management system (RDBMS) using SQL queries. MongoDB is a NoSQL database that stores data in flexible JSON-like documents.</p>
+
+        <h3>5. Storing and Retrieving Data from a Database</h3>
+        <p>In backend development, data is often stored in a database and retrieved based on user requests. For example, in a blog, when a user submits a new post, it gets saved in the database, and when requested, it’s retrieved and displayed to other users.</p>
+
+        <h2>Project</h2>
+        <p>Create a simple blog with user registration and login functionality. Use Node.js (or PHP) for the backend and MySQL (or MongoDB) for storing user data.</p>
+
+        <h2>Summary</h2>
+        <p>This section introduced the core concepts of backend development, including servers, routing, HTTP methods, and database interactions.</p>
+
+        <h2>Exercises</h2>
+        <ul>
+            <li>Set up a local server using Node.js and create a basic route that displays a custom message.</li>
+            <li>Research the differences between relational databases (e.g., MySQL) and NoSQL databases (e.g., MongoDB).</li>
+            <li>Create a form to submit data to a local server and store it in a database.</li>
+        </ul>
+
+        <a href="web development.html" class="back-button">Back to Course Overview</a>
+    </div>
+</body>
+</html>

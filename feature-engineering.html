@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Engineering and Data Preprocessing</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Feature Engineering and Data Preprocessing</h1>
+        <p class="duration">Duration: 4 hours</p>
+    </header>
+    <div class="content">
+        <h2>Objective</h2>
+        <p>Learn techniques for preparing data for machine learning, ensuring models are built on clean and relevant features.</p>
+
+        <h2>Topics</h2>
+        <ul>
+            <li>Handling Categorical and Numerical Variables</li>
+            <li>Feature Scaling and Normalization</li>
+            <li>Encoding Categorical Data</li>
+            <li>Feature Selection and Extraction</li>
+        </ul>
+
+        <h2>Explanation</h2>
+        <p>Feature engineering and data preprocessing are crucial steps in the data science workflow. These processes involve transforming raw data into a format suitable for modeling, improving the model's performance, and ensuring the results are meaningful.</p>
+
+        <h3>Handling Categorical and Numerical Variables</h3>
+        <p>In machine learning, data can be categorized into two main types: categorical and numerical variables.</p>
+        <ul>
+            <li><strong>Categorical Variables:</strong> These variables represent discrete groups or categories. Examples include gender (male/female), color (red/blue/green), and product type (electronics/clothing).</li>
+            <li><strong>Numerical Variables:</strong> These are quantifiable variables that can be measured. They can be further divided into:
+                <ul>
+                    <li><strong>Continuous Variables:</strong> These can take any value within a range (e.g., height, weight).</li>
+                    <li><strong>Discrete Variables:</strong> These represent counts (e.g., number of children, number of cars).</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Understanding the type of variables is essential as it affects the choice of preprocessing techniques and algorithms used in modeling.</p>
+
+        <h3>Feature Scaling and Normalization</h3>
+        <p>Feature scaling is the process of standardizing the range of independent variables or features. Scaling is particularly important when the features have different units or scales. Common techniques include:</p>
+        <ul>
+            <li><strong>Min-Max Scaling:</strong> Scales the data to a fixed range, usually [0, 1]. The formula is:
+                <blockquote>
+                    <code>X_scaled = (X - X_min) / (X_max - X_min)</code>
+                </blockquote>
+            </li>
+            <li><strong>Standardization (Z-score normalization):</strong> This technique transforms the data to have a mean of 0 and a standard deviation of 1. The formula is:
+                <blockquote>
+                    <code>X_standardized = (X - mean) / std</code>
+                </blockquote>
+            </li>
+        </ul>
+        <p>Scaling helps to prevent features with larger ranges from disproportionately influencing the model.</p>
+
+        <h3>Encoding Categorical Data</h3>
+        <p>Machine learning algorithms typically require numerical input, so categorical variables must be converted into numerical formats. Common encoding techniques include:</p>
+        <ul>
+            <li><strong>Label Encoding:</strong> Assigns a unique integer to each category. For example, "red" = 0, "blue" = 1, "green" = 2. While simple, it may introduce a misleading ordinal relationship.</li>
+            <li><strong>One-Hot Encoding:</strong> Creates binary columns for each category. For example, the color variable with three categories would create three columns: red, blue, green, with a 1 or 0 indicating presence or absence. This method avoids the issue of ordinal relationships but increases dimensionality.</li>
+        </ul>
+        <p>Choosing the right encoding method is crucial as it can impact model performance.</p>
+
+        <h3>Feature Selection and Extraction</h3>
+        <p>Feature selection involves choosing the most relevant features for model training, while feature extraction combines existing features to create new ones.</p>
+        <ul>
+            <li><strong>Feature Selection Techniques:</strong> Common methods include:
+                <ul>
+                    <li><strong>Filter Methods:</strong> Use statistical tests to select features based on their relationship with the target variable (e.g., Chi-square test).</li>
+                    <li><strong>Wrapper Methods:</strong> Use a predictive model to evaluate subsets of features (e.g., recursive feature elimination).</li>
+                    <li><strong>Embedded Methods:</strong> Perform feature selection as part of the model training process (e.g., Lasso regression).</li>
+                </ul>
+            </li>
+            <li><strong>Feature Extraction Techniques:</strong> Techniques like Principal Component Analysis (PCA) can reduce dimensionality while preserving variance, creating new features from the original data.</li>
+        </ul>
+        <p>Effective feature selection and extraction enhance model accuracy and reduce overfitting.</p>
+
+        <h2>Project</h2>
+        <p>Perform data preprocessing and feature engineering on a dataset (e.g., from Kaggle). Steps include:</p>
+        <ol>
+            <li>Identify categorical and numerical variables.</li>
+            <li>Scale numerical features using Min-Max or Standardization.</li>
+            <li>Encode categorical variables using Label or One-Hot Encoding.</li>
+            <li>Select relevant features using one of the selection techniques discussed.</li>
+            <li>Document the preprocessing steps and prepare the data for modeling.</li>
+        </ol>
+
+        <h2>Quiz</h2>
+        <p>1. What is the difference between categorical and numerical variables?</p>
+        <p>2. Describe two methods for encoding categorical data.</p>
+        <p>3. Why is feature scaling important in machine learning?</p>
+        <p>4. What are the main differences between feature selection and feature extraction?</p>
+    </div>
+</body>
+</html>
